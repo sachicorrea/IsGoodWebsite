@@ -16,7 +16,7 @@ get_header();
 ?>
 
 	<div class="container">
-		
+		<div class="initial-image"></div>
 	</div>
 
 <?php
