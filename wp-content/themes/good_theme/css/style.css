@@ -1,0 +1,28 @@
+
+/* Inline #9 | http://localhost/TestGood/ */
+
+.menu-menu-1-container {
+    background-color: #333333;
+    padding-left: 25px;
+}
+
+.menu-menu-1-container li a{
+    background-color: #333333;
+    padding: 15px 15px 15px 15px;
+}
+  
+#primary-menu li a {
+    color: #ccccc7;
+  }
+
+#primary-menu li a:hover {
+    color: #c8db35;
+  }
+
+body {
+      color: #cccccc;
+}
+
+.initial-image {
+    background: url(/images/img.jpg);
+}
