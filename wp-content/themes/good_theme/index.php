@@ -14,11 +14,10 @@
 
 get_header();
 ?>
-
 	<div class="container">
-		<div class="initial-image"></div>
+		
 	</div>
-
+	
 <?php
-get_sidebar();
+/*get_sidebar();*/
 get_footer();
