@@ -26,3 +26,32 @@ body {
 .initial-image {
     background: url(/images/img.jpg);
 }
+
+.continuar-button {
+  background-color: #333333;
+  border: none;
+  color: #ccb991  ;
+  padding: 5px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: table;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.second-container {
+  margin: 0 400px;
+  padding: 0 0 30px 0;
+}
+
+.phrase, .author-phrase {
+  text-align: right;
+}
+
+.content {
+  column-count: 2;
+  padding-top: 30px;
+}
