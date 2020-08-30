@@ -41,7 +41,7 @@ get_header();
 
 			<div class="content">
 				<div class="image-home">
-					<img src="/TestGood/wp-content/themes/good_theme/images/img1.png" script="width:700 px;height:700px;">
+					<img src="/TestGood/wp-content/themes/good_theme/images/img1.png" script="width:458 px;height:300px;">
 				</div>
 
 				<div class="main-content">
@@ -49,7 +49,9 @@ get_header();
 				</div>
 			</div>
 
-			<div class="continuar-button">Continuar</div>
+			<div class="continuar-button">
+				<button>Continuar</button>
+			</div>
 		</div>
 	</div>	
 
