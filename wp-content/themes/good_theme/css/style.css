@@ -21,19 +21,20 @@
 
 body {
       color: #000;
+      background-color: #cccccc;
 }
 
 .initial-image {
     background: url(/images/img.jpg);
 }
 
-.continuar-button {
+.continuar-button{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-button {
+.continuar-button button {
   background-color: #333333;
   border: none;
   color: #ccb991  ;
@@ -56,4 +57,67 @@ button {
 .content {
   column-count: 2;
   padding-top: 30px;
+}
+
+.page-template-galeria * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-template-galeria .container {
+  padding: 0 40px;
+}
+
+.page-template-galeria .title {
+  margin-top: 25px;
+}
+
+.page-template-galeria .gallery {
+  border: 8px solid #fff;
+}
+
+.page-template-galeria .gallery:hover{
+  border: 8px solid #777;
+}
+
+.page-template-galeria .gallery img{
+  width: 100%;
+  height: auto;
+}
+
+.page-template-galeria .responsive {
+  padding: 15px;
+  float: left;
+  width: 33.33%;
+}
+
+#button1, #button2{
+  background-color: #333333;
+  border: none;
+  color: #ccb991  ;
+  padding: 5px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 25px;
+}
+
+.buttons-container {
+  text-align: center;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 700px) {
+  .page-template-galeria .responsive{
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .page-template-galeria .responsive{
+    width: 100%;
+  }
 }
