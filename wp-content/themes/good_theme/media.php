@@ -6,7 +6,7 @@ Template name: Media page
 get_header();
 ?>
    <div class="title">
-        <h1>Video & audio</h1>
+        <p>Video & audio</p>
     </div>
 
 	<div class="container">    
