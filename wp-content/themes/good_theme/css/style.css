@@ -1,5 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* Inline #9 | http://localhost/TestGood/ */
+.container {
+  padding: 0 40px;
+}
 
 .menu-menu-1-container {
     background-color: #333333;
@@ -59,14 +66,8 @@ body {
   padding-top: 30px;
 }
 
-.page-template-galeria * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.page-template-galeria .container {
-  padding: 0 40px;
+.title {
+  margin: 0 20px;
 }
 
 .page-template-galeria .title {
@@ -105,6 +106,7 @@ body {
 
 .buttons-container {
   text-align: center;
+  margin: 25px;
 }
 
 /* Media queries */

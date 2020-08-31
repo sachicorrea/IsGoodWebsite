@@ -14,12 +14,11 @@
 
 get_header();
 ?>
+	<img src="/TestGood/wp-content/themes/good_theme/images/img.jpg">
+	
 	<div class="container">
-		
-		<img src="/TestGood/wp-content/themes/good_theme/images/img.jpg">
-
 		<div class="second-container">
-			<div class="title">
+			<div class="title-home">
 				<h1>Inicio</h1>
 			</div>
 
