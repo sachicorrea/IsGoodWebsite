@@ -143,6 +143,7 @@ function good_theme_scripts() {
 	wp_enqueue_style( 'good_theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'good_theme-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'good-theme-css', get_theme_file_uri('/css/style.css'));
+	wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
 
 	wp_enqueue_script( 'good_theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

@@ -6,7 +6,7 @@ Template name: Galeria page
 get_header();
 ?>
 	<div class="title">
-		<h1>Galería</h1>
+		<p>Galería</p>
 	</div>
 	
 	<div class="container">

@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   padding: 0 40px;
 }
@@ -27,8 +32,12 @@
   }
 
 body {
-      color: #000;
-      background-color: #cccccc;
+    color: #333333; 
+    background-color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2em;
 }
 
 .initial-image {
@@ -67,11 +76,25 @@ body {
 }
 
 .title {
-  margin: 0 20px;
+  margin: 0 0 0 20px;
+  font-weight: 400;
+  font-size: 2.5em;
+  margin-top: 25px;
 }
 
-.page-template-galeria .title {
-  margin-top: 25px;
+.title-home {
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+.subtitle-home {
+  font-weight: 300;
+  font-size: 2.0em;
+  text-align: justify;
+}
+
+.intro-content {
+  padding: 15px 0;
 }
 
 .page-template-galeria .gallery {
@@ -108,6 +131,28 @@ body {
   text-align: center;
   margin: 25px;
 }
+
+.page-template-contact .container {
+  padding: 0 400px;
+}
+
+input.wpcf7-form-control.wpcf7-submit{
+  background-color: #333333;
+  border: none;
+  color: #ccb991  ;
+  padding: 5px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required.nombre {
+  padding: 0 680px 0 0;
+}
+
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+  padding: 0 680PX 0 0;
+}*/
 
 /* Media queries */
 

@@ -19,11 +19,11 @@ get_header();
 	<div class="container">
 		<div class="second-container">
 			<div class="title-home">
-				<h1>Inicio</h1>
+				<p>Inicio</p>
 			</div>
 
-			<div class="subtitle">
-				<h2>Lorem ipsum</h2>
+			<div class="subtitle-home">
+				<p>Lorem ipsum</p>
 			</div>
 			
 			<div class="phrase">
