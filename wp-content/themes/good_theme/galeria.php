@@ -10,53 +10,25 @@ get_header();
 	</div>
 	
 	<div class="container">
-		<div class="responsive">
-			<div class="gallery">
-				<a target="_blank" href="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-					<img src="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-				</a>
-			</div>
-		</div>
 		
-		<div class="responsive">
-			<div class="gallery">
-				<a target="_blank" href="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-					<img src="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-				</a>
-			</div>
-		</div>
+		<?php
+            $photoGallery = new WP_Query(array(
+				'post_type' => 'fotos',
+				'post_status' => 'publish',
+				'posts_per_page' => 6,
+            ));
 
-		<div class="responsive">
-			<div class="gallery">
-				<a target="_blank" href="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-					<img src="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-				</a>
+            while($photoGallery -> have_posts()) {
+				$photoGallery -> the_post(); 
+        ?>
+          
+			<div class="responsive">
+				<div class="gallery">
+					<img src="<?php the_post_thumbnail_url('gallery-photos') ?>">
+				</div>
 			</div>
-		</div>
-
-		<div class="responsive">
-			<div class="gallery">
-				<a target="_blank" href="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-					<img src="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-				</a>
-			</div>
-		</div>
-
-		<div class="responsive">
-			<div class="gallery">
-				<a target="_blank" href="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-					<img src="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-				</a>
-			</div>
-		</div>
-
-		<div class="responsive">
-			<div class="gallery">
-				<a target="_blank" href="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-					<img src="/TestGood/wp-content/themes/good_theme/images/img2.jpg">
-				</a>
-			</div>
-		</div>
+			
+        <?php } ?>
 
 		<div class="buttons-container">
 			<button id="button1">Regresar</button>

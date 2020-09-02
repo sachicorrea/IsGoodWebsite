@@ -47,6 +47,10 @@ if ( ! function_exists( 'good_theme_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		/* Editing images size */
+		add_image_size('home-image', 458, 300, true);
+		add_image_size('gallery-photos', 300, 223, true);
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(

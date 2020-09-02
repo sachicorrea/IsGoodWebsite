@@ -11,8 +11,42 @@ get_header();
 
 	<div class="container">    
         <div class="video">
-			<iframe width="600" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"></iframe>
+            <?php
+                // Load value.
+                $iframe = get_field('oEmbed');
+
+                // Use preg_match to find iframe src.
+                preg_match('/src="(.+?)"/', $iframe, $matches);
+                $src = $matches[1];
+
+                // Add extra parameters to src and replcae HTML.
+                $params = array(
+                    'controls'  => 0,
+                    'hd'        => 1,
+                    'autohide'  => 1
+                );
+                $new_src = add_query_arg($params, $src);
+                $iframe = str_replace($src, $new_src, $iframe);
+
+                // Add extra attributes to iframe HTML.
+                $attributes = 'frameborder="0"';
+                $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                // Display customized HTML.
+                echo $iframe;
+            ?>
 		</div>
+
+        <audio class="audio">
+            <!--<source src="" type="audio/mpeg">-->
+
+            <?php $attr = array(
+                'loop'     => '',
+                'autoplay' => '',
+                'preload' => 'none'
+            );
+            echo wp_audio_shortcode( $attr ); ?>
+        </audio>
 
         <div class="buttons-container">
             <button id="button1">Regresar</button>

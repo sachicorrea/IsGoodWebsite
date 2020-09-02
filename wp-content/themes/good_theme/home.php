@@ -36,7 +36,15 @@ get_header();
 
 				<div class="content">
 					<div class="image-home">
-						<img src="/TestGood/wp-content/themes/good_theme/images/img1.png" script="width:458 px;height:300px;">
+					<?php
+						/* grab the url for the full size featured image */
+						$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); 
+				
+						/* link thumbnail to full size image for use with lightbox*/
+						echo '<a href="'.esc_url($featured_img_url).'" rel="lightbox">'; 
+							the_post_thumbnail('home-image');
+						echo '</a>';
+					?>
 					</div>
 
 					<div class="main-content">
